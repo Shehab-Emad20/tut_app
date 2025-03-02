@@ -52,6 +52,21 @@ ThemeData getApplicationTheme() {
         ),
       ),
     ),
-    
+
+    textTheme: TextTheme(
+      displayLarge: getLightStyle(color: Colors.white, fontSize: FontSize.s22),
+      headlineMedium: getSemiBoldStyle(
+        color: ColorManger.darkPrimary,
+        fontSize: FontSize.s16,
+      ),
+      titleMedium: getMediumStyle(
+        color: ColorManger.lightGrey,
+        fontSize: FontSize.s14,
+      ),
+
+      bodySmall: getRegularStyle(color: ColorManger.grey1),
+
+      bodyMedium: getRegularStyle(color: ColorManger.grey),
+    ),
   );
 }
