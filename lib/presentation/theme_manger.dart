@@ -68,5 +68,42 @@ ThemeData getApplicationTheme() {
 
       bodyMedium: getRegularStyle(color: ColorManger.grey),
     ),
+
+    inputDecorationTheme: InputDecorationTheme(
+      contentPadding: EdgeInsets.all(AppPadding.p8),
+      hintStyle: getRegularStyle(
+        color: ColorManger.grey,
+        fontSize: FontSize.s14,
+      ),
+      labelStyle: getMediumStyle(
+        color: ColorManger.grey,
+        fontSize: FontSize.s14,
+      ),
+      errorStyle: getRegularStyle(color: ColorManger.error),
+
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(
+          color: ColorManger.primaryColor,
+          width: AppSize.s1_5,
+        ),
+        borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
+      ),
+
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorManger.grey, width: AppSize.s1_5),
+        borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
+      ),
+
+      errorBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorManger.error, width: AppSize.s1_5),
+      ),
+
+      focusedErrorBorder: OutlineInputBorder(
+        borderSide: BorderSide(
+          color: ColorManger.primaryColor,
+          width: AppSize.s1_5,
+        ),
+      ),
+    ),
   );
 }
