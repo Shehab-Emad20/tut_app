@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tut_app/utils/color_manger.dart';
 
 class OnboardingView extends StatefulWidget {
   const OnboardingView({super.key});
@@ -10,6 +11,9 @@ class OnboardingView extends StatefulWidget {
 class _OnboardingViewState extends State<OnboardingView> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: ColorManger.darkGrey,
+      body: Center(child: Text('Onboarding View')),
+    );
   }
 }

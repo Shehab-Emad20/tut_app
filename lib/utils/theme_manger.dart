@@ -55,7 +55,7 @@ ThemeData getApplicationTheme() {
 
     textTheme: TextTheme(
       displayLarge: getLightStyle(color: Colors.white, fontSize: FontSize.s22),
-      headlineMedium: getSemiBoldStyle(
+      headlineLarge: getSemiBoldStyle(
         color: ColorManger.darkPrimary,
         fontSize: FontSize.s16,
       ),
@@ -64,9 +64,9 @@ ThemeData getApplicationTheme() {
         fontSize: FontSize.s14,
       ),
 
-      bodySmall: getRegularStyle(color: ColorManger.grey1),
+      bodyLarge: getRegularStyle(color: ColorManger.grey1),
 
-      bodyMedium: getRegularStyle(color: ColorManger.grey),
+      bodySmall: getRegularStyle(color: ColorManger.grey),
     ),
 
     inputDecorationTheme: InputDecorationTheme(
