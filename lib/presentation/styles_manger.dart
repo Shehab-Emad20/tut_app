@@ -49,5 +49,3 @@ TextStyle getBoldStyle({double fontSize = FontSize.s12, required Color color}) {
     color,
   );
 }
-
-
