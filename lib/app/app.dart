@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../styles/theme_manger.dart';
+import '../utils/theme_manger.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp._internal();
