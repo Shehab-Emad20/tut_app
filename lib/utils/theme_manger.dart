@@ -1,3 +1,4 @@
+// I need to you comment in lines bcuese underdatand
 import 'package:flutter/material.dart';
 import 'color_manger.dart';
 import 'font_manger.dart';
@@ -6,6 +7,7 @@ import 'values_manger.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(
+    // primary color
     primaryColor: ColorManger.primaryColor,
     primaryColorLight: ColorManger.lightPrimary,
     primaryColorDark: ColorManger.darkPrimary,
@@ -54,14 +56,18 @@ ThemeData getApplicationTheme() {
     ),
 
     textTheme: TextTheme(
-      displayLarge: getLightStyle(color: Colors.white, fontSize: FontSize.s22),
-      headlineLarge: getSemiBoldStyle(
-        color: ColorManger.darkPrimary,
+      displayLarge: getLightStyle(
+        color: ColorManger.darkGrey,
+        fontSize: FontSize.s16,
+      ),
+
+      headlineMedium: getRegularStyle(
+        color: ColorManger.darkGrey,
         fontSize: FontSize.s16,
       ),
       titleMedium: getMediumStyle(
-        color: ColorManger.lightGrey,
-        fontSize: FontSize.s14,
+        color: ColorManger.primaryColor,
+        fontSize: FontSize.s16,
       ),
 
       bodyLarge: getRegularStyle(color: ColorManger.grey1),
@@ -77,7 +83,7 @@ ThemeData getApplicationTheme() {
       ),
       labelStyle: getMediumStyle(
         color: ColorManger.grey,
-        fontSize: FontSize.s14,
+        fontSize: FontSize.s16,
       ),
       errorStyle: getRegularStyle(color: ColorManger.error),
 
