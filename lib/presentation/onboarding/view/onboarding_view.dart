@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:tut_app/data/models.dart';
+import 'package:tut_app/app/models.dart';
 import 'package:tut_app/presentation/onboarding/view_model/onboarding_view_model.dart';
 import 'package:tut_app/utils/assets_manger.dart';
 import 'package:tut_app/utils/color_manger.dart';
