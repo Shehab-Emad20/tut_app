@@ -6,8 +6,8 @@ import 'package:tut_app/data/response/responses.dart';
 part 'app_api.g.dart';
 
 @RestApi(baseUrl: Constants.baseUrl)
-abstract class AppApi {
-  factory AppApi(Dio dio, {String baseUrl}) = _AppApi;
+abstract class AppServiceClient {
+  factory AppServiceClient(Dio dio, {String baseUrl}) = _AppApi;
   @POST("/customer/login")
   Future<AuthenticationResponse> login(
     @Field("email") String email,
